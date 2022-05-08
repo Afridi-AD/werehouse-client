@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, getAuth, sendEmailVerification, signInWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword, getAuth, sendEmailVerification, sendPasswordResetEmail, signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -77,6 +77,13 @@ const Signup = () => {
 
   }
 
+  const passWordReset =()=>{
+    sendPasswordResetEmail(auth,email)
+    .then(()=>{
+      console.log('email sent');
+    })
+  }
+
   const veriFyEmail = () => {
     sendEmailVerification(auth.currentUser)
       .then(() => {
@@ -112,6 +119,7 @@ const Signup = () => {
           <Form.Check onChange={handleRgisterdChange} type="checkbox" label={registerd? "All ready registered" :"Register"} />
         </Form.Group>
         <p className='text-danger'>{error}</p>
+        <Button onClick={passWordReset} variant='link' type='submit'>Reset password?</Button>
         <Button variant="primary" type="submit">{registerd ? "Login" : "Signup"}
           
         </Button>

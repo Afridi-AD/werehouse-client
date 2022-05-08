@@ -1,0 +1,110 @@
+[
+  {
+    "_id": "6273d9a0894177f187cef158",
+    "price": "$1,441.25",
+    "picture": "https://i.ibb.co/W0bvHh1/rsz-cycle2.png",
+    "quantity": 33,
+    "name": "Rhonda Henson",
+    "suplier": "EARTHWAX",
+    "description": "692 Moffat Street"
+  },
+  {
+    "_id": "6273d9a0811f7ec9a99e4053",
+    "price": "$2,433.12",
+    "picture": "https://i.ibb.co/CWBbnPy/rsz-cycle3.png",
+    "quantity": 29,
+    "name": "Barnett Baldwin",
+    "suplier": "TALAE",
+    "description": "474 Hewes Street"
+  },
+  {
+    "_id": "6273d9a06f3de85613bf3253",
+    "price": "$2,486.79",
+    "picture": "https://i.ibb.co/H7Xn56p/rsz-cycle4.png",
+    "quantity": 35,
+    "name": "Michael Oliver",
+    "suplier": "BLUPLANET",
+    "description": "853 Karweg Place"
+  },
+  {
+    "_id": "6273d9a089bf14ed3e53d2f6",
+    "price": "$2,639.09",
+    "picture": "https://i.ibb.co/mcHvwRj/rsz-cycle5.png",
+    "quantity": 36,
+    "name": "Vicki Kidd",
+    "suplier": "TRIPSCH",
+    "description": "814 Cook Street"
+  },
+  {
+    "_id": "6273d9a0ec5c8068ab8667e9",
+    "price": "$3,538.70",
+    "picture": "https://i.ibb.co/2MWLnwT/rsz-cycle6.png",
+    "quantity": 23,
+    "name": "Donaldson Frost",
+    "suplier": "NUTRALAB",
+    "description": "187 Strauss Street"
+  },
+  {
+    "_id": "6273d9a0d6bcd70d84256cd2",
+    "price": "$3,189.10",
+    "picture": "https://i.ibb.co/2sFymrW/rsz-cycle7.png",
+    "quantity": 37,
+    "name": "Miranda Wong",
+    "suplier": "ATOMICA",
+    "description": "716 Pershing Loop"
+  },
+  {
+    "_id": "6273d9a05b95ff0089ad8688",
+    "price": "$1,341.25",
+    "picture": "https://i.ibb.co/qj60dHS/rsz-cycle8.png",
+    "quantity": 28,
+    "name": "Parks Hahn",
+    "suplier": "SENMAO",
+    "description": "608 Navy Street"
+  },
+  {
+    "_id": "6273d9a036f61b3c5221af1d",
+    "price": "$2,270.21",
+    "picture": "https://i.ibb.co/VLJ1rJh/rsz-cycle9.png",
+    "quantity": 31,
+    "name": "Ruby Hill",
+    "suplier": "ATGEN",
+    "description": "632 Royce Place"
+  },
+  {
+    "_id": "6273d9a0ca07f498145e5287",
+    "price": "$3,518.35",
+    "picture": "https://i.ibb.co/zQDDgpc/rsz-cycle10.png",
+    "quantity": 28,
+    "name": "Mueller Guy",
+    "suplier": "AFFLUEX",
+    "description": "440 Quentin Street"
+  },
+  {
+    "_id": "6273d9a0eafb91817c7bd2d4",
+    "price": "$1,016.85",
+    "picture": "https://i.ibb.co/LdcgQkx/rsz-cycle11.png",
+    "quantity": 31,
+    "name": "Sharlene Horne",
+    "suplier": "ECOLIGHT",
+    "description": "476 Tapscott Avenue"
+  },
+  {
+    "_id": "6273d9a032006f3117ce5850",
+    "price": "$2,244.13",
+    "picture": "https://i.ibb.co/HTtKf5M/rsz-cycle12.png",
+    "quantity": 23,
+    "name": "Tonya Molina",
+    "suplier": "IZZBY",
+    "description": "334 Tompkins Place"
+  },
+  {
+    "_id": "6273d9a03fd1c8ce8309b3b4",
+    "price": "$1,660.54",
+    "picture": "https://i.ibb.co/qj60dHS/rsz-cycle8.png",
+    "quantity": 24,
+    "name": "Solis Salinas",
+    "suplier": "OCEANICA",
+    "description": "573 Crosby Avenue"
+  }
+]

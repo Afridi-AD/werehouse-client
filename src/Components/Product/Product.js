@@ -18,7 +18,7 @@ const Product = (props) => {
   <Card.Body>
     <Card.Title>Name : {name} </Card.Title>
     
-    <Card.Text>
+    <Card.Text> Description : 
      {description}
     </Card.Text>
   </Card.Body>
@@ -29,7 +29,7 @@ const Product = (props) => {
     <ListGroupItem>Price : {price} </ListGroupItem>
   </ListGroup>
   <Card.Body>
-      <button className='pt-10 pill' onClick={()=>navigate('/manage')}>Update</button>
+      <button className='pt-10 pill' onClick={()=>navigate('/addProduct')}>Update</button>
     
     
   </Card.Body>

@@ -16,6 +16,12 @@ const ManageInventortDetails = ({item,handleProductDelete}) => {
       <td>{name}</td>
       <td>{quantity}</td>
       <td><button onClick={()=>handleProductDelete(item._id)}>Delete</button></td>
+
+
+      <form>
+    <input type="text" />
+
+      </form>
       
     
     

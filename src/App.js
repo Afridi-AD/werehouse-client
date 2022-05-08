@@ -21,20 +21,31 @@ function App() {
       <Header></Header>
       <Routes>
 
-        <Route path='/'element={<Home></Home>} ></Route>
-        <Route path='/header' element = {<Header></Header>}></Route>
-        <Route path='/login' element = {<Login></Login>}></Route>
-        <Route path='/order' element = {<Order></Order>}></Route>
-        <Route path='/blog'  element = {<Blog></Blog>}></Route>
-        <Route path='/update' element ={<UpdateItem></UpdateItem>} ></Route>
-        <Route path='/manageInventori' element ={<ManageInventory></ManageInventory>}></Route>
-        <Route path='/signup' element = {<Signup></Signup>}></Route>
+        <Route path='/' element={<Home></Home>} ></Route>
+        <Route path='/header' element={<Header></Header>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/order' element={<Order></Order>}></Route>
+        <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/update' element={<UpdateItem></UpdateItem>} ></Route>
+        <Route path='/manageInventori' element={
+          <RequirAuth>
+            <ManageInventory></ManageInventory>
+          </RequirAuth>
+        }></Route>
+        <Route path='/signup' element={<Signup></Signup>}></Route>
         <Route path='/manage' element={
           <RequirAuth>
             <ManageItem></ManageItem>
           </RequirAuth>
         } ></Route>
-        <Route path='*' element = {<PageNotFound></PageNotFound>}></Route>
+
+        <Route path='/addProduct' element={
+          <RequirAuth>
+            <Order></Order>
+          </RequirAuth>
+        } ></Route>
+
+        <Route path='*' element={<PageNotFound></PageNotFound>}></Route>
 
       </Routes>
     </div>

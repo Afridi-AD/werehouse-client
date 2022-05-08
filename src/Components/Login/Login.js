@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, getAuth, sendEmailVerification } from 'firebase/auth';
+import { createUserWithEmailAndPassword, getAuth, sendEmailVerification, signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
@@ -36,7 +36,7 @@ const Login = (sign) => {
   }
 
   const handleFormsubmit = (event) => {
-    createUserWithEmailAndPassword(auth,email,password,)
+    signInWithEmailAndPassword(auth,email,password,)
     .then(result =>{
       const user = result.user;
       console.log(user);

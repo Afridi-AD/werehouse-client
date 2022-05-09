@@ -6,7 +6,7 @@ const UpdateItem = () => {
 
     const [items, setItem] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://mighty-scrubland-10205.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setItem(data));
     }, []);

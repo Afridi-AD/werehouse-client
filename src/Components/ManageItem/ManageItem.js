@@ -4,7 +4,7 @@ const ManageItem = (props) => {
 
     const [product, setProduct] =useState({});
     useEffect(()=>{
-        const url = `http://localhost:5000/product/`
+        const url = `https://mighty-scrubland-10205.herokuapp.com/product/`
     },[])
 
     // const {name,price,quantity,suplier,description,picture} = props.product

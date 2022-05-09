@@ -12,7 +12,7 @@ const ManageInventory = () => {
       const proced =window.confirm('Are you want to delete ?');
       if(proced){
         
-        const url = `http://localhost:5000/products/${id}`;
+        const url = `https://mighty-scrubland-10205.herokuapp.com/products/${id}`;
         fetch(url,{
           method :'DELETE'
         })

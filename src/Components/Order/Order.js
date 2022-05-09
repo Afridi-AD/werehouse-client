@@ -7,7 +7,7 @@ const Order = () => {
 
     console.log(data);
 
-    const url = `http://localhost:5000/products`;
+    const url = `https://mighty-scrubland-10205.herokuapp.com/products`;
     fetch(url,{
       method: 'POST', 
       headers: {

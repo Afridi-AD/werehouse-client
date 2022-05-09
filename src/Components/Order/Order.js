@@ -21,7 +21,7 @@ const Order = () => {
     })
   } 
     return (
-        <div className='w-50 mx-auto'>
+        <div className='w-50 mx-auto col-lg-12 col-md-4'>
             <h1>Add product</h1>
            <form className='d-flex flex-column mb-2' onSubmit={handleSubmit(onSubmit)}>
       <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />

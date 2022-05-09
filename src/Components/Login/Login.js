@@ -59,7 +59,7 @@ const Login = (sign) => {
  
   
   return (
-    <div className=''>
+    <div className='col-lg-12 col-md-4'>
       <h1 className='text-center'>Please Login</h1>
       <Form onSubmit={handleFormsubmit} className='mx-auto w-50'>
         <Form.Group className="mb-3" controlId="formBasicEmail">

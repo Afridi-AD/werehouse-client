@@ -82,8 +82,8 @@ const Login = (sign) => {
       </Form>
       <p className='text-center'>Want to signup? <Link to="/signup">Signup</Link></p>
       
-      <div className='align-items-center mx-auto'>
-      <Button className='ms-auto' variant='secondary' onClick={signInWithgoogle}><img src="https://i.ibb.co/j6LTZFP/rsz-google-signin-button-1024x260.png" alt="" /></Button>
+      <div className='justify-content-center align-items-center ms-5'>
+      <Button  variant='secondary' onClick={signInWithgoogle}><img src="https://i.ibb.co/j6LTZFP/rsz-google-signin-button-1024x260.png" alt="" /></Button>
       </div>
     </div>
 

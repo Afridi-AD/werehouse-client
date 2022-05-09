@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import app from '../../firebase.init';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const auth = getAuth(app)
 const Signup = () => {
   
@@ -80,7 +82,7 @@ const Signup = () => {
   const passWordReset =()=>{
     sendPasswordResetEmail(auth,email)
     .then(()=>{
-      console.log('email sent');
+      toast('Password reset email sent');
     })
   }
 
@@ -122,6 +124,7 @@ const Signup = () => {
         
       </Form>
       <p className='text-center'>Want to login? <Link to="/login">login</Link></p>
+      <ToastContainer />
     </div>
   );
 };

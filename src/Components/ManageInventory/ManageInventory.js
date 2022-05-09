@@ -30,7 +30,7 @@ const ManageInventory = () => {
     }
 
     return (
-        <div className='mt-5'>
+        <div className='mt-5 col-lg-12 col-md-4'>
             
             
             <table className="table table-dark">

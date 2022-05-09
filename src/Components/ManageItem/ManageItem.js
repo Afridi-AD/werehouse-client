@@ -9,7 +9,7 @@ const ManageItem = (props) => {
 
     // const {name,price,quantity,suplier,description,picture} = props.product
     return (
-        <div>
+        <div className='col-lg-12 col-md-4'>
             <h1>This is manage item </h1>
         </div>
     );

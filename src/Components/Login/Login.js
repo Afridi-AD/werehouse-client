@@ -1,8 +1,8 @@
 import { createUserWithEmailAndPassword, getAuth, sendEmailVerification, signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import app from '../../firebase.init';
 import useFirebase from '../Hooks/useFirebase';
 import './Login.css';
@@ -17,13 +17,19 @@ const Login = (sign) => {
   const [password, setPassword] = useState('');
   
   const [error,setError] = useState('');
+  const location = useLocation
+
+
+  const navigate = useNavigate();
+
+  const form = location?.state?.pathname ||'/';
 
 
 
   const handlleEmailBlur = (event) => {
 
     setEmail(event.target.value);
-    console.log(email);
+    
   }
 
  
@@ -32,14 +38,16 @@ const Login = (sign) => {
 
   const handlePasswordBlure = (event) => {
     setPassword(event.target.value);
-    console.log(password);
+    
   }
+
+
 
   const handleFormsubmit = (event) => {
     signInWithEmailAndPassword(auth,email,password,)
     .then(result =>{
       const user = result.user;
-      console.log(user);
+      navigate()
     })
     .catch(error=>{
       console.error(error);
@@ -51,7 +59,7 @@ const Login = (sign) => {
  
   
   return (
-    <div>
+    <div className=''>
       <h1 className='text-center'>Please Login</h1>
       <Form onSubmit={handleFormsubmit} className='mx-auto w-50'>
         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -67,14 +75,15 @@ const Login = (sign) => {
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button variant="secondary" type="submit">
           Login
         </Button>
         
       </Form>
       <p className='text-center'>Want to signup? <Link to="/signup">Signup</Link></p>
-      <div className='mx-auto'>
-      <button className='mt-3 mb-2 bg-pill border-radios ' onClick={signInWithgoogle}><img src="https://i.ibb.co/3vTYMXX/rsz-1google.png" alt="" /></button>
+      
+      <div className='align-items-center mx-auto'>
+      <Button className='ms-auto' variant='secondary' onClick={signInWithgoogle}><img src="https://i.ibb.co/j6LTZFP/rsz-google-signin-button-1024x260.png" alt="" /></Button>
       </div>
     </div>
 

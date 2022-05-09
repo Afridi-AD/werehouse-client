@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Carousel } from "react-bootstrap";
+import Footer from "../Footer/Footer";
 
 import Product from "../Product/Product";
 import './Home.css';
@@ -62,7 +63,7 @@ const Home = () => {
         }
         
             </div>
-          <footer> This is footer </footer>
+          <Footer></Footer>
         </div>
     );
 };

@@ -111,16 +111,12 @@ const Signup = () => {
         </Form.Control.Feedback>
          </Form.Group>
 
-        {/* <Form.Group className="mb-3" controlId="formBasicPassword">
-      <Form.Label> Confirm Password</Form.Label>
-      <Form.Control  onBlur={handleConfirmPassword} type="password" placeholder="Confirm Password" required />
-    </Form.Group> */}
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
           <Form.Check onChange={handleRgisterdChange} type="checkbox" label={registerd? "All ready registered" :"Register"} />
         </Form.Group>
         <p className='text-danger'>{error}</p>
         <Button onClick={passWordReset} variant='link' type='submit'>Reset password?</Button>
-        <Button variant="primary" type="submit">{registerd ? "Login" : "Signup"}
+        <Button variant="secondary" type="submit">{registerd ? "Login" : "Signup"}
           
         </Button>
         

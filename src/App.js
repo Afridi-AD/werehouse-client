@@ -24,7 +24,7 @@ function App() {
         <Route path='/' element={<Home></Home>} ></Route>
         <Route path='/header' element={<Header></Header>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
-        <Route path='/order' element={<Order></Order>}></Route>
+        {/* <Route path='/order' element={<Order></Order>}></Route> */}
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/update' element={<UpdateItem></UpdateItem>} ></Route>
         <Route path='/manageInventori' element={

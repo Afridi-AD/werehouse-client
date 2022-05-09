@@ -29,7 +29,7 @@ const Product = (props) => {
     <ListGroupItem>Price : {price} </ListGroupItem>
   </ListGroup>
   <Card.Body>
-      <button className='pt-10 pill' onClick={()=>navigate('/addProduct')}>Update</button>
+      <Button variant="secondary" onClick={()=>navigate('/addProduct')}>Update</Button>
     
     
   </Card.Body>

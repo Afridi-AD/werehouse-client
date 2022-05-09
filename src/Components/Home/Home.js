@@ -16,7 +16,7 @@ const Home = () => {
     }, [])
 
     return (
-        <div>
+        <div className='col-lg-12 col-md-4'>
             <div className="text-center mt-5">
             <Carousel variant="dark">
   <Carousel.Item>

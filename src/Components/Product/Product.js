@@ -11,7 +11,7 @@ const Product = (props) => {
     navigate(path);
     }
     return (
-        <div>
+        <div className='col-lg-12 col-md-4'>
             
             <Card style={{ width: '18rem' }}>
   <Card.Img variant="top" src={picture} />

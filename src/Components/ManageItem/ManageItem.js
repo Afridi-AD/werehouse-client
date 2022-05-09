@@ -10,7 +10,7 @@ const ManageItem = (props) => {
     // const {name,price,quantity,suplier,description,picture} = props.product
     return (
         <div>
-            <h1>This is order </h1>
+            <h1>This is manage item </h1>
         </div>
     );
 };

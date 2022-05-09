@@ -11,7 +11,7 @@ const UpdateItem = () => {
             .then(data => setItem(data));
     }, []);
     return (
-        <div>
+        <div className='col-lg-12 col-md-4'>
             {
                 items.map(item => <ManageItem
                 key={item._id}

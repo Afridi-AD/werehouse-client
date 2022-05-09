@@ -16,7 +16,7 @@ import ManageInventory from './Components/ManageInventory/ManageInventory';
 
 function App() {
   return (
-    <div >
+    <div  className='col-lg-12 col-md-4'>
 
       <Header></Header>
       <Routes>
